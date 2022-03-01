@@ -4,14 +4,14 @@ clear all
 
 T = load('contourdata.txt');
 
-kamad_ratio = 0.1:0.05:1;
+kasmcc_ratio = 0.1:0.05:1;
 BubR1_tot = 50:10:300;
 Bub1_tot = 100;
 
 v = 1:0.1:1.4;
 v = [v,1.45];
 
-[c,h] = contour(BubR1_tot/Bub1_tot,1./kamad_ratio,T',v);
+[c,h] = contour(BubR1_tot/Bub1_tot,1./kasmcc_ratio,T',v);
 clabel(c,h);
 h.LineWidth = 2;
 

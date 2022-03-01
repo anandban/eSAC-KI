@@ -1,5 +1,5 @@
-% This function outputs K = the kamad values for eSAC will different MELT
-% occupancy. 0000 = no Bub1 or 
+% This function outputs K = the kasmcc values for eSAC with different MELT
+% occupancy. 
 % km1 = Mad2 activation rate of Bub1, relative to Bub1:BubR1
 % km2 = Mad2 activation rate of Bub1:BubR1, set to 1.
 

@@ -8,10 +8,10 @@
 
 function[sol] = exit_time(es,km)
 
-global par eSAC_conc kamad
+global par eSAC_conc kasmcc
 
 eSAC_conc = es;
-kamad = km;
+kasmcc = km;
 %**************************************************************************
 % Time for integration
 % ts=start time; tf=final time
@@ -40,7 +40,7 @@ end
 
 function zp = esac_odes(t,z)
 
-global par eSAC_conc kamad
+global par eSAC_conc kasmcc
 
 CycB   = z(1);
 eSACA  = z(2);
@@ -68,7 +68,7 @@ Cdc20 = Cdc20T-MCC;
 
 zp = [kscyc - (kdcyc + kdcyc20*Cdc20)*CycB;
       kancyc*CycB*(eSAC_conc-eSACA) - kincapp*CAPP*eSACA;
-      kamad*eSACA*Cdc20 - (kdimcc + kimad20*Cdc20)*MCC;
+      kasmcc*eSACA*Cdc20 - (kdimcc + kimad20*Cdc20)*MCC;
       kacapp*(CAPPT-CAPP) - kicapp*CycB*CAPP];
   
 end

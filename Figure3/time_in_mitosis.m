@@ -12,8 +12,8 @@ function[] = time_in_mitosis(k1,k2,km1,km2)
 xt = [0:1:50,52:4:100,110:10:200];
 
 
-% Calculate the n = average [eSAC] and k = average kamad.
-[n,k] = kamad(xt,k1,k2,km1,km2,100);
+% Calculate the n = average [eSAC] and k = average kasmcc.
+[n,k] = kasmcc(xt,k1,k2,km1,km2,100);
 k(1) = 0;
 
 parfor i = 1:length(xt)

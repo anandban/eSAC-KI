@@ -49,12 +49,12 @@ BubR1_tot = (0.25:0.25:4)*100;
 for i = 1:length(BubR1_tot)
 
     % KI1*-KI2
-    [n,k] = kamad(xt,0,1,0.1,1,BubR1_tot(i));    
+    [n,k] = kasmcc(xt,0,1,0.1,1,BubR1_tot(i));    
     s = exit_time(n,80*k/1000);
     tm_01(i) = s.xe;
         
     % KI1-KI2*
-    [n,k] = kamad(xt,1,0,0.1,1,BubR1_tot(i));    
+    [n,k] = kasmcc(xt,1,0,0.1,1,BubR1_tot(i));    
     s = exit_time(n,80*k/1000);
     tm_10(i) = s.xe;
     

@@ -5,27 +5,27 @@
 
 %function[x,y,rat] = saturation_contourmap()
 
-kamad_ratio = 0.1:0.05:1;
+kasmcc_ratio = 0.1:0.05:1;
 BubR1_tot = 50:10:300;
 Bub1_tot = 100;
 
-rat = zeros(length(BubR1_tot),length(kamad_ratio));
+rat = zeros(length(BubR1_tot),length(kasmcc_ratio));
 
 
 xt = 200;
 
 for i = 1:length(BubR1_tot)
     
-   for j = 1:length(kamad_ratio)
+   for j = 1:length(kasmcc_ratio)
       
-       [n1,k1] = kamad(xt,1,0,kamad_ratio(j),1,BubR1_tot(i));
+       [n1,k1] = kasmcc(xt,1,0,kasmcc_ratio(j),1,BubR1_tot(i));
        
        s = exit_time(n1,80*k1/1000); 
        
        tm1 = s.xe;
        
        
-       [n2,k2] = kamad(xt,0,1,kamad_ratio(j),1,BubR1_tot(i));
+       [n2,k2] = kasmcc(xt,0,1,kasmcc_ratio(j),1,BubR1_tot(i));
        
        s = exit_time(n2,80*k2/1000); 
        
@@ -34,7 +34,7 @@ for i = 1:length(BubR1_tot)
       
        rat(i,j) = tm1/tm2;
        x(i,j) = Bub1_tot/BubR1_tot(i);
-       y(i,j) = 1/kamad_ratio(j);
+       y(i,j) = 1/kasmcc_ratio(j);
               
    end
    

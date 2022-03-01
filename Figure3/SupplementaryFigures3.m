@@ -34,20 +34,20 @@ clear all
 
 xt = 100;
 
-[n,k] = kamad(xt,1,1,0,1,100);
+[n,k] = kasmcc(xt,1,1,0,1,100);
 [t,y] = esac_model(n,k*80/1000);
 plot(t,y(:,1),'LineWidth',2,'Color',[0.9294    0.6941    0.1255]);
 hold all
 
-[n,k] = kamad(xt,0,1,0,1,100);
+[n,k] = kasmcc(xt,0,1,0,1,100);
 [t,y] = esac_model(n,k*80/1000);
 plot(t,y(:,1),'LineWidth',2,'Color',[0,0,1]);
 
-[n,k] = kamad(xt,1,0,0,1,100);
+[n,k] = kasmcc(xt,1,0,0,1,100);
 [t,y] = esac_model(n,k*80/1000);
 plot(t,y(:,1),'LineWidth',2,'Color',[0.4667    0.6745    0.1882]);
 
-[n,k] = kamad(xt,0,0,0,1,100);
+[n,k] = kasmcc(xt,0,0,0,1,100);
 [t,y] = esac_model(n,k*80/1000);
 plot(t,y(:,1),'LineWidth',2,'Color',[1,0,1]);
 
@@ -66,7 +66,7 @@ set(gca,'Box','off','TickDir','out');
 
 % To make the curves with cooeprativity - run the code.
 
-% To make the curves without cooperativity - set coop = 1 in kamad.m and
+% To make the curves without cooperativity - set coop = 1 in kasmcc.m and
 % then run the code.
 
 clear all
