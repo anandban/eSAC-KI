@@ -1,13 +1,13 @@
 ### This repository contains MATLAB codes used to generate figures for the Current Biology paper "BubR1 recruitment to the kinetochore via Bub1 enhances Spindle Assembly Checkpoint signaling"
 
 Description of files in the folder Figure1
-- Fig1E.m - This file is used to make different curves in Fig. 1E.
+- Fig1E.m - Used to make different curves in Fig. 1E.
 - SupplementaryFigures1.m - Contains codes for generating all the figure panels in supplementary figure 1.
--	He_model_new.xlsx – This file contains all the reactions included in the model. 
--	eSACKI_script.m - This file reads the above Excel file and uses rx_rates.m to create a new file (He_model_odes.m) with the Ordinary Differential Equations corresponding to the model.
--	He_new.m - This files is used to calculate the time in mitosis at a given eSAC concentration.
--	He_new_ic.m - This file is used to calculate the initial conditions for the simulation (concentration of various Bub1 bound species). 
--	He_par.m - This files contains all the model parameters.   
+-	He_model_new.xlsx – Contains all the reactions included in the model. 
+-	eSACKI_script.m - Reads the above Excel file and uses rx_rates.m to create a new file (He_model_odes.m) with the Ordinary Differential Equations corresponding to the model.
+-	He_new.m - Used to calculate the time in mitosis at a given eSAC concentration.
+-	He_new_ic.m - Used to calculate the initial conditions for the simulation (concentration of various Bub1 bound species). 
+-	He_par.m - Contains all the model parameters.   
 
 Description of files in the folder Figure3
 - Fig3B.m to Fig 3E.m - Contains files to produce the corresponding figures in the manuscript.
