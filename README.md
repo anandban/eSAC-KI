@@ -15,7 +15,7 @@ Description of files in the folder Figure3
 - esac2_conc.m - used to calculate the equilibrium concentration of all the MELT and KI motif bound species at a given eSAC concentration.
 - esac2_par.m - contains the parameters for metaphase to anaphase transiton model (based on He et. al., model).
 - exit_time.m - used to calculate the time in mitosis at a given eSAC concentration.
-- kamad.m - used to calculate the effective eSAC concentration ([eSAC]<sub>T</sub> in Eq. 15 of manuscript) and the effective MCC formation rate (k<sub>asmcc</sub>) in Eq. 18 of manuscript).
+- kasmcc.m - used to calculate the effective eSAC concentration ([eSAC]<sub>T</sub> in Eq. 15 of manuscript) and the effective MCC formation rate (k<sub>asmcc</sub>) in Eq. 18 of manuscript).
 - kd_par.m - contains paramaters for the reversible binding beteween MELT and Bub1, Bub1 and BubR1, KI1 and Bub1, and KI2 and BubR1.
 - km_par.m - outputs the MCC formation rate constant values for eSAC with different MELT occupancy.
 - saturation_contourmap.m - code to generate the data (contourdata.txt) for the heatmap in Fig. 3D.    
